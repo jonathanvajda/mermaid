@@ -5,6 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "check": "npm run lint && npm test",
+    "lint": "eslint . --quiet",
     "test": "node run-tests.js",
     "security-check": "npm audit --audit-level=high",
     "prepare": "husky install"
@@ -13,6 +15,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.8.0",
     "husky": "^8.0.3"
   }
 }
